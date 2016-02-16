@@ -1,0 +1,12 @@
+package com.login.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+public class loginController {
+	
+	@RequestMapping("/spring")
+    public ModelAndView main() {
+        return new ModelAndView("spring", "message", "successfully done!");
+    }	
+}

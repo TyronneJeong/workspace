@@ -9739,3 +9739,15 @@ Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.c
 	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1138)
 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130)
 	... 5 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-02-16 20:43:46.939
+!MESSAGE An exception occurred during push on URI https://github.com/north-oranke/workspace.git: https://github.com/north-oranke/workspace.git: https://github.com/north-oranke/workspace.git/info/refs?service=git-receive-pack not found
+!STACK 0
+org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/north-oranke/workspace.git: https://github.com/north-oranke/workspace.git/info/refs?service=git-receive-pack not found
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:482)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:387)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
